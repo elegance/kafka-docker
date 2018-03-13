@@ -7,7 +7,7 @@
 
 ```bash
 # 创建 zookeeper image
-docker build -t elegance/zookeeper:3.4.6 -f zookeeper.Dockerfile
+docker build -t elegance/zookeeper:3.4.6 -f zookeeper.Dockerfile .
 docker images | grep elegance
 
 # 启动 zookeeper
@@ -20,7 +20,7 @@ docker ps
 
 ```bash
 # 创建 kafka image
-docker build -t elegance/kafka-0.9.0.1 -f kafka.0.0.0.1.Dockerfile
+docker build -t elegance/kafka-0.9.0.1 -f kafka.0.0.0.1.Dockerfile .
 
 # 查看link帮助，下面link zk 的container
 docker run --help | grep link 
